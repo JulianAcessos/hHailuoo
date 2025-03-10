@@ -1,14 +1,3 @@
-// ==UserScript==
-// @name         Script V1
-// @namespace    https://hailuoai.video/create
-// @version      0.1
-// @description  v1 especifico
-// @author       You
-// @match        *://*/*
-// @run-at       document-start
-// @grant        none
-// ==/UserScript==
-
 (function() {
     'use strict';
 
@@ -18,6 +7,8 @@
         if (element) {
             element.remove();
             console.log("Elemento 'video-user-component' removido com sucesso!");
+        } else {
+            console.error("Elemento 'video-user-component' não encontrado.");
         }
     }
 
